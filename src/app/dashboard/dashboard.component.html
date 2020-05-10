@@ -1,7 +1,20 @@
+<span #displayMessage class="displayMessage"></span>
 <table width="400">
   <tr>
-    <td>{{subjectConst}}</td>
-    <td>{{behaviourSubjectConst}}</td>
-    <td>{{replaySubjectConst}}</td>
+    <td>
+      <ul>
+        <li *ngFor="let item of arr.subject">{{item}}</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li *ngFor="let item of arr.behaviourSubject">{{item}}</li>
+      </ul>
+    </td>
+    <td>
+      <ul>
+        <li *ngFor="let item of arr.replaySubject">{{item}}</li>
+      </ul>
+    </td>
   </tr>
 </table>

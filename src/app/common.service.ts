@@ -15,7 +15,7 @@ export class CommonService {
 
   constructor() { }
 
-  emit(value: number) {
+  public emit(value: number) {
     this.subject$.next(value);
     this.behaviourSubject$.next(value);
     this.replaySubject$.next(value);
